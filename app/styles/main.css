@@ -61,6 +61,14 @@ label {
   text-transform: none;
 }
 
+.row {
+  margin: 0;
+}
+
+.links a {
+  color: #fff;
+}
+
 /* === HEADER === */
 
 header .nav-item-wrap a {
@@ -128,51 +136,56 @@ header .navbar-brand img {
 
 /* === SHOWCASE === */
 
-
-#showcase,
+.showcase
+/*#showcase,
 #about-us,
 #our-destinations,
-#about-us-page {
-  background-image: url(../images/01-home/home-header-large.jpg);
+#about-us-page*/ {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-#showcase .wrap,
+#index-page-header-image {
+  background-image: url(../images/01-home/home-header-large.jpg);
+}
+
+.wrap
+/*#showcase .wrap,
 #about-us .wrap,
 #our-destinations .wrap,
-#about-us-page .wrap {
+#about-us-page .wrap*/ {
   padding: 20% 0;
 }
 
-#showcase h1,
+.showcase h1,
+.showcase p
+/*#showcase h1,
 #about-us p,
 #our-destinations p,
-#about-us-page h1 {
+#about-us-page h1*/ {
   color: #fff;
+
 }
 
-#showcase a,
+.showcase a
+/*#showcase a,
 #about-us a,
 #our-destinations a,
-#about-us-page a {
+#about-us-page a*/ {
   color: #fff;
   border: 2px solid #fff;
   padding: 1% 5%;
   text-decoration: none;
 }
 
-#showcase a:hover,
+.showcase a:hover
+/*#showcase a:hover,
 #about-us a:hover,
 #our-destinations a:hover,
-#about-us-page a:hover {
+#about-us-page a:hover*/ {
   color: #eee;
   border: 2px solid #eee;
-}
-
-#about-us-page {
-  background-image: url(../images/02-about/about-header-large.jpg);
 }
 
 /* === LATEST OFFERS === */
@@ -239,10 +252,14 @@ header .navbar-brand img {
   margin-bottom: 10px;
 }
 
-/* === ABOUT US === */
+/* === ABOUT US & DESTINATION SECTION ON MAIN PAGE === */
 
 #about-us {
   background-image: url(../images/01-home/about-us-background-image.jpg);
+}
+
+#our-destinations {
+  background-image: url(../images/01-home/destinations-background-image.jpg);
 }
 
 #about-us p,
@@ -251,9 +268,7 @@ header .navbar-brand img {
   padding: 2% 10%;
 }
 
-#our-destinations {
-  background-image: url(../images/01-home/destinations-background-image.jpg);
-}
+/* === FOOTER === */
 
 footer {
   padding: 50px 0;
@@ -264,6 +279,10 @@ footer {
 
 footer h3 {
   text-transform: uppercase;
+}
+
+footer img {
+  max-width: 50%;
 }
 
 footer a,
@@ -281,6 +300,18 @@ footer a:hover {
     text-align: left;
     padding: 50px 10px;
   }
+
+  footer img {
+  max-width: 70%;
+  text-align: left;
+      
+  }
+}
+
+@media (min-width: 992px) {
+  footer img {
+    max-width: 30%;
+  }
 }
 
 /* Creates a vertical nav starting at 768px (sm) */
@@ -288,4 +319,84 @@ footer a:hover {
     .latest-offers-sub-menu .collapse {
         display: block;
     }
+}
+
+
+/* === ABOUT US PAGE === */
+
+#about-us-page {
+  background-image: url(../images/02-about/about-header-large.jpg);
+}
+
+#text-under-header-image {
+  background-color: #4fa8cd;
+}
+
+#text-under-header-image p {
+  padding: 5% 0;
+  text-transform: none;
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+}
+
+#main-section-about-page {
+  padding: 5% 0;
+}
+
+#main-section-about-page p {
+  text-transform: none;
+}
+
+#main-section-about-page h4 {
+  font-style: normal;
+  font-weight: 600;
+}
+
+#main-section-about-page .row {
+  /*border: solid 1px red;*/
+  margin: 0;
+}
+
+
+/* === DESTINATIONS === */
+
+#destinations-page {
+  background-image: url(../images/05-destinations-home/destinations-header-large.jpg);
+}
+
+#holidays {
+  background-image: url(../images/05-destinations-home/holidays-background.jpg);
+}
+
+#holidays-page {
+  background-image: url(../images/03-holidays/holidays-header-large.jpg);
+}
+
+
+/* === HOLIDAYS === */
+
+#enquire-form-holidays {
+  background-color: #4fa8cd;
+  padding: 5% 0;
+}
+
+#enquire-form-holidays h1 {
+  color: #fff;
+  text-align: center;
+}
+
+#enquire-form-holidays form {
+  background-color: #e5e5e5;
+  padding: 2% 5%;
+}
+
+/* === BOOKING PAYMENT PAGE === */
+
+#booking-payment-page {
+  background-image: url(../images/08-booking-travel-information/booking-payment-header-large.jpg);
+}
+
+#travel-info-page {
+  background-image: url(../images/08-booking-travel-information/travel-information-header-large.jpg);
 }
