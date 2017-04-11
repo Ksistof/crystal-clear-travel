@@ -4,52 +4,61 @@
   #575756 - darkgrey
   #e5e5e5 - lightgrey
 
-  GRID
-  Extra small <576px
-  Small >= 576px
-  Medium >= 768px
-  Large >= 992px
+  GRID BREAKDOWN
+  Extra Small -  576px and down
+  Small       -  768px and 576px  
+  Medium      -  992px and 768px
+  Large       - 1200px and 992px
+  Extra Large - 1200px and up
 
   Bootstrap Grid
   https://v4-alpha.getbootstrap.com/layout/overview/
  */
 
+/* === Importing all Heading sizes specified in design .PSD === */
+@import url(heading-sizes.css);
+
 /* === GLOBAL === */
 html, body {
-  font-family: 'Roboto', 'Helvetica', sans-serif;
+  font-family: "proxima-nova",sans-serif;
   font-size: 16px;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
 }
 
-h1 {
-  font-size: 48px;
-  margin-bottom: 40px;
+h1, h4, .btn {
+  font-family: "proxima-nova",sans-serif;
+  font-style: normal;
+  font-weight: 300;
 }
 
-h2 {
-  font-size: 36px;
-}
-
-h3 {
-  font-size: 28px;
-}
-
-h4 {
-  font-size: 20px;
-}
-
-h5 {
-  font-size: 18px;
+h2, h3, h5 {
+  font-family: "proxima-nova", sans-serif;
+  font-style: normal;
+  font-weight: 600;
 }
 
 .navbar {
   padding: .5rem 0;
 }
 
+.btn-primary {
+  background-color: #4fa8cd;
+  border: none;
+  cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
 img {
   max-width: 100%;
+}
+
+label {
+  text-transform: none;
 }
 
 /* === HEADER === */
@@ -65,34 +74,105 @@ header .navbar-brand img {
   max-width: 55%;
 }
 
+@media (max-width: 992px) {
+  header .navbar-brand img {
+    max-width: 40%;
+  }
+}
+
+/* === Makes nav element centered for medium and small screens ===*/
+@media (max-width: 768px) {
+  header ul {
+    text-align: center;
+  }
+
+  header .navbar-brand img {
+    max-width: 35%;
+  }
+}
+
+/* === ENQUIRE FORM === */
+
+.left-side-modal {
+  background-image: url(../images/04-enquiry-popup/background-image.jpg);
+  background-position: top right;
+  padding: 10% 2% 0;
+  color: #fff;
+}
+
+.left-side-modal p {
+  text-transform: none;
+}
+
+#enquire-form .col-sm-8 {
+  padding: 0;
+}
+
+.modal-dialog {
+  max-width: 80%;
+  margin: 40px auto;
+
+}
+
+.modal-content {
+  border: none;
+  border-radius: 0;
+}
+
+/* === Makes Enquire modal smaller on extra large screens */
+@media (min-width: 1200px) {
+    .modal-dialog {
+      max-width: 60%;
+    }
+}
+
 /* === SHOWCASE === */
 
-#showcase {
+
+#showcase,
+#about-us,
+#our-destinations,
+#about-us-page {
   background-image: url(../images/01-home/home-header-large.jpg);
   background-size: cover;
-  height: 100%;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-#showcase .wrap {
-  padding: 240px 0;
+#showcase .wrap,
+#about-us .wrap,
+#our-destinations .wrap,
+#about-us-page .wrap {
+  padding: 20% 0;
 }
 
-#showcase h1 {
+#showcase h1,
+#about-us p,
+#our-destinations p,
+#about-us-page h1 {
   color: #fff;
 }
 
-#showcase a {
+#showcase a,
+#about-us a,
+#our-destinations a,
+#about-us-page a {
   color: #fff;
   border: 2px solid #fff;
   padding: 1% 5%;
   text-decoration: none;
 }
 
-#showcase a:hover {
+#showcase a:hover,
+#about-us a:hover,
+#our-destinations a:hover,
+#about-us-page a:hover {
   color: #eee;
   border: 2px solid #eee;
+}
+
+#about-us-page {
+  background-image: url(../images/02-about/about-header-large.jpg);
 }
 
 /* === LATEST OFFERS === */
@@ -103,6 +183,12 @@ header .navbar-brand img {
 
 #latest-offers h3 {
   padding: 20px 0; 
+}
+
+@media (min-width: 0px) and (max-width: 363px) {
+    #latest-offers h3 {
+      text-align: center; 
+  }
 }
 
 .latest-offers-sub-menu a {
@@ -119,27 +205,83 @@ header .navbar-brand img {
   margin-bottom: 2px;
 }
 
-.latest-offers-sub-menu .btn {
-  width: 100%;
-  margin-bottom: 20px;
+.latest-offers-sub-menu {
+  margin-bottom: 10px;
 }
 
 .nav-link-bg a {
   background-color: #4fa8cd;
+  pointer-events: none;
   cursor: default;
+}
+
+.card,
+.card-img-top,
+.btn {
+  border-radius: 0 !important;
 }
 
 .card-block {
   background-color: #4fa8cd;
   padding: 5px 10px;
-
 }
 
 .card-block p {
   color: #fff;
 }
 
-/* === about-us === */
+#latest-offers .btn {
+  background-color: #4fa8cd;
+  cursor: pointer;
+  border: none;
+  border-radius: none;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* === ABOUT US === */
+
+#about-us {
+  background-image: url(../images/01-home/about-us-background-image.jpg);
+}
+
+#about-us p,
+#our-destinations p {
+  text-transform: none;
+  padding: 2% 10%;
+}
+
+#our-destinations {
+  background-image: url(../images/01-home/destinations-background-image.jpg);
+}
+
+footer {
+  padding: 50px 0;
+  background-color: #e5e5e5;
+  text-transform: none;
+  text-align: center;
+}
+
+footer h3 {
+  text-transform: uppercase;
+}
+
+footer a,
+footer a:hover {
+  color: #292b2c;
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  .list-inline-item {
+    display: block;
+  }
+
+  footer {
+    text-align: left;
+    padding: 50px 10px;
+  }
+}
 
 /* Creates a vertical nav starting at 768px (sm) */
 @media (min-width: 992px) {
