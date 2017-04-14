@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Web Starter Kit">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#2F3BA2">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <!-- Boostrap 4 CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- Font Awesome CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<script src="https://use.typekit.net/jnj6enp.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+
+        <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/owl.carousel.css">
+        <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/owl.theme.default.css">
+        <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/owl.theme.green.css">
+  </head>
+  <body>
+    
+  <!-- 
+  =====================
+   Header + Navigation
+  ===================== 
+   -->
+
+  <header class="container">
+    <nav class="navbar navbar-toggleable-md navbar-light">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand mr-auto" href="index.html">
+        <img src="images/logo.png" alt="">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto"></ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="about-us.html">About us <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="destinations.html">Destinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="holidays.html">Holidays</a>
+          </li>
+          <li class="nav-item nav-item-wrap">
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#enquire-form">ENQUIRE TODAY</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 
+  =====================
+   EQUIRE FORM
+   activated on button click in menu, showcase and footer
+  ===================== 
+   -->
+
+ <div class="modal fade" id="enquire-form" tabindex="-1" role="dialog" aria-labelledby="enquire-form-label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="row">
+      <div class="col-4 left-side-modal hidden-xs-down">
+        <h1>Enquire Today</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi perspiciatis rerum, possimus illum quos iste, necessitatibus ipsum, quibusdam, provident dignissimos veritatis.</p>
+      </div>
+      <div class="col-sm-8">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enquire-form-label">Enquire Now</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="recipient-name" placeholder="NAME*" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="recipient-email" placeholder="EMAIL*" required>
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-control" id="recipient-tel" placeholder="TELEPHONE*" required>
+              </div>
+              <div class="form-check" required>
+              <p>Best time to contact*</p>
+                <label class="form-check-label pr-3">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1">
+                  Don't Mind
+                </label>
+                <label class="form-check-label pr-3">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                  Next Working Day
+                </label>
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                  ASAP!
+                </label>
+              </div>       
+              <div class="form-group">
+                <textarea class="form-control" id="message-text" placeholder="MESSAGE*"></textarea>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="recipient-name" placeholder="How much are you planning to spend?" required>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">SUBMIT ENQUIRE</button>
+          </div>
+        </div> <!-- .modal-content -->
+      </div> <!-- .col-8 -->
+    </div> <!-- .row -->
+  </div> <!-- .modal-dialog -->
+</div> <!-- .moddal -->
+
+<!-- 
+  ===========
+   Showcase
+  =========== 
+-->
+
+  <section class="text-center showcase" id="asia-page">
+    <div class="wrap">
+      <h1>AUSTRALIASIA</h1>
+      <a href="#" data-toggle="modal" data-target="#enquire-form">ENQUIRE TODAY</a>
+    </div>
+        <div id="text-under-header-image" class="pt-5 pb-5">
+      <div class="container">
+        <h2>When to travel</h2>
+        <p>Australia Being in the southern hemisphere, Australia’s seasons are the reverse of Europe and America. Spring: September to November; summer: December to February; autumn: March to May; winter: June to August. Southeast Australia, incorporating Sydney and Melbourne, experiences a temperate climate typified by warm summers and mild winters. Central Australia, The Red Centre area, has a harsh desert climate with extremely hot summers reaching 40°C, and warm winters reaching 25°C. Western Australia is mainly arid desert, similar to Central Australia, however Perth and the coast find it more comfortable as summer temperatures are lower. A tropical climate prevails in Northern Australia, as being close to the equator, temperatures are high year round with little seasonal fluctuation and more abundant rainfall. New Zealand With temperatures around 30°C, moderately low rainfall, and many hours of sunshine throughout most of the country, New Zealand is a great place to visit anytime. The climate does vary from the warm far north to the cool far south, but not having a large temperature variance, it is common to experience four seasons in one day. South Pacific The peak dry season tends to be April to October, because the weather is cooler thanks to the easterly trade winds which ventilate the humid tropical climate and prevent thunderstorms. However, it can still rain, but showers come and go pretty quickly</p>
+      </div>
+    </div>
+  </section>
+
+
+<!-- 
+  =================
+   Latest Offers
+  =================
+-->
+  <section class="container" id="latest-offers">
+    <div class="row">
+      <div class="col">
+        <h3 class="text-center">Australasia holidays offers</h3>
+      </div>
+    </div>
+    
+
+    <div class="row">
+<div class="owl-carousel owl-theme">
+    <div class="item">
+
+        <div class="col-12">
+            <!-- <div class="card mb-4"> -->
+              <img class="card-img-top" src="images/05-destinations-home/africa-link.jpg" alt="Card image cap">
+              <div class="card-block links">
+                <p class="card-text"><a href="#/">Tropical North Queensland From £2,059pp</a></p>
+              </div>
+            <!-- </div> -->
+        </div>
+
+    </div>
+    <div class="item">
+        <div class="col-12">
+            <div class="card mb-4">
+              <img class="card-img-top" src="images/05-destinations-home/asia-link.jpg" alt="Card image cap">
+              <div class="card-block links">
+                <p class="card-text"><a href="#/">City & Coast From £1,899pp</a></p>
+              </div>
+            </div>
+        </div>
+
+      </div>
+      <div class="item">
+        <div class="col-12">
+            <div class="card mb-4">
+              <img class="card-img-top" src="images/05-destinations-home/asia-link.jpg" alt="Card image cap">
+              <div class="card-block links">
+                <p class="card-text"><a href="#/">4* Fiji – 5 nights From £1,069pp</a></p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="col-12">
+            <div class="card mb-4">
+              <img class="card-img-top" src="images/05-destinations-home/asia-link.jpg" alt="Card image cap">
+              <div class="card-block links">
+                <p class="card-text"><a href="#/">4* Cook Island – 5 nights From £989pp</a></p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="col-12">
+            <div class="card mb-4">
+              <img class="card-img-top" src="images/05-destinations-home/asia-link.jpg" alt="Card image cap">
+              <div class="card-block links">
+                <p class="card-text"><a href="#/">5* Borneo From £929 pp</a></p>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="col-12">
+            <div class="card mb-4">
+              <img class="card-img-top" src="images/05-destinations-home/asia-link.jpg" alt="Card image cap">
+              <div class="card-block links">
+                <p class="card-text"><a href="#/">5* Vietnam From £999 pp</a></p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>      
+<div class="container-fluid">
+  <div class="row gray">
+  <div class="col-6 pt-5 pb-5 left">
+    <h3>Australia</h3>
+        <p>will quite simply take your breath away. Whether you choose to head north, east, south or west, Australia will showcase the very best mix of cities, beaches, countryside and culture. From the cosmopolitan bustle of Sydney, with its world-famous Opera House, to the vibrant and laid back café culture of Melbourne or perhaps even the relaxed and easy going atmosphere of Perth, you’ll be spoilt for choice if you’re looking to include a city escape ‘down under’. But it’s not just the cities that delight – Australia is a country of contrast, from the simply stunning sights of the Great Barrier Reef to the rainforest in Tropical North Queensland, relaxing on the glorious Gold Coast to wine tasting in the famous Yarra Valley in Victoria – take it all in. The World Heritage Listed Blue Mountains reveal a secret beauty and outdoor adventure. Or for a true taste of the outback head to the Red Centre, a place steeped in rich Aboriginal culture and rugged beauty, shadowed by the majesty of Ayers Rock.</p>
+      </div>
+    <div class="col pr-0 australia-image"></div>
+  </div>
+  
+  <div class="row">
+  <div class="col-6 pt-5 pb-5 left">
+    <h3>New Zealand’s</h3>
+        <p>natural highs Heaven on earth is often how New Zealand is described. With snow-capped mountains to deep, crystal clear lagoons, plunging cave networks to raging rapids, the islands are a playground for thrill-seekers looking for the next adrenaline high. The North Island is home to secluded beaches, stunning coastlines, abundant wildlife and of course the vibrant city of Auckland, also known as ‘The City of Sails’. Here visitors can sample delicious food, take in 360-degree views of one of the world’s greatest harbour cities and even take a hike up one of Auckland’s 53 volcanic peaks. Meanwhile on the South Island be prepared for some of New Zealand’s most glorious scenery. The West Coast in particular offers mountain peaks, massive glaciers and mysterious lakes, while Christchurch is an elegant, rather English city surrounded by the beautiful Canterbury Plains.</p>
+      </div>
+    <div class="col pr-0 new-zealand-image"></div>
+  </div>
+
+  <div class="row gray">
+  <div class="col-6 pt-5 pb-5 left">
+    <h3>South Pacific</h3>
+        <p>desert island dreaming French Polynesia’s deserted beaches, aqua lagoons and lush rainforests are just as perfect as the postcards make out. Of its six island groups, the Society Islands are the most visited with Bora Bora, Tahiti and Moorea the brightest jewels in this sparkling crown. If watersports are top of your holiday to do list then look no further than Fiji with mile upon mile of white sand beaches and coastlines just waiting to be discovered. The largest island and tourist hub of Viti Levu is home to 70 per cent of Fiji’s warm-hearted people. Last but by no means least consider the Cook Islands, fifteen castaway islands scattered over the empty ocean. From the rugged mountains of Rarotonga to the pearl fringed sands of Penryhn each island has its own inimitable characteristics and culture to enjoy.</p>
+      </div>
+    <div class="col pr-0 pacific-image"></div>
+  </div>
+  </div>
+</section>
+
+<section id="enquire-form-holidays">
+  <div class="container">
+  <h1>Enquire today</h1>
+    <form>
+    <div class="row">
+      <div class="col-5">
+        <div class="form-group">
+        <input type="text" class="form-control" id="recipient-name" placeholder="NAME*" required>
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" id="recipient-email" placeholder="EMAIL*" required>
+      </div>
+      <div class="form-group">
+        <input type="tel" class="form-control" id="recipient-tel" placeholder="TELEPHONE*" required>
+      </div>
+      <div class="form-check" required>
+      <p>Best time to contact*</p>
+        <label class="form-check-label pr-3">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1">
+          Don't Mind
+        </label>
+        <label class="form-check-label pr-3">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+          Next Working Day
+        </label>
+        <label class="form-check-label">
+          <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+          ASAP!
+        </label>
+      </div>       
+      </div>
+
+
+      <div class="col-7">
+      <div class="form-group">
+        <textarea rows="8" class="form-control" id="message-text" placeholder="MESSAGE*"></textarea>
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="recipient-name" placeholder="How much are you planning to spend?" required>
+      </div>
+      </div>
+          </div> <!-- .row -->
+
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn btn-primary pull-right">SUBMIT ENQUIRE</button>
+            </div>
+          </div>
+    </form>  
+  </div> <!-- .container -->
+</section>
+
+  <footer>
+    <h3>Book with confidence</h3>
+    <div class="row mb-5 mt-5">
+      <div class="col hidden-xs-down"></div>
+      <div class="col text-right"><img src="images/FinancialLogoPrintBlue-Q4069.PNG" alt=""></div>
+      <div class="col text-left mt-3"><img src="images/MemberLogoPrintColour-Q4069.PNG" alt=""></div>
+      <div class="col"></div>
+    </div>
+    
+    <nav>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="about-us.html">About Us</a> | </li>
+        <li class="list-inline-item"><a href="destinations.html">Destinations</a> | </li>
+        <li class="list-inline-item"><a href="holidays.html">Holidays</a> | </li>
+        <li class="list-inline-item"><a href="" data-toggle="modal" data-target="#enquire-form">Enquire Now</a> | </li>
+        <li class="list-inline-item"><a href="booking-payment.html">Booking & Payment</a> | </li>
+        <li class="list-inline-item"><a href="travel-info.html">Travel Information</a></li>
+      </ul>
+    </nav>
+    <div>
+      &copy; crystalclear 2017. All rights reserved.
+    </div>
+  </footer>
+
+
+    <!-- jQuery JS CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap 4 Tether JS CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    
+    <!-- Bootsrap 4 JS CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- OWL plugin -->
+    <script src="scripts/owl.carousel.js"></script>
+
+    <!-- build:js scripts/main.min.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-XXXXX-X', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!-- Built with love using Web Starter Kit -->
+  </body>
+</html>

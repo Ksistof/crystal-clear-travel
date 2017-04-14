@@ -69,6 +69,10 @@ label {
   color: #fff;
 }
 
+p {
+  margin: 0;
+}
+
 /* === HEADER === */
 
 header .nav-item-wrap a {
@@ -333,16 +337,12 @@ footer a:hover {
 }
 
 #text-under-header-image p {
-  padding: 5% 0;
   text-transform: none;
   margin: 0;
   font-style: normal;
   font-weight: 600;
 }
 
-#main-section-about-page {
-  padding: 5% 0;
-}
 
 #main-section-about-page p {
   text-transform: none;
@@ -354,8 +354,11 @@ footer a:hover {
 }
 
 #main-section-about-page .row {
-  /*border: solid 1px red;*/
   margin: 0;
+}
+
+#main-section-about-page a {
+  color: #000;
 }
 
 
@@ -363,6 +366,11 @@ footer a:hover {
 
 #destinations-page {
   background-image: url(../images/05-destinations-home/destinations-header-large.jpg);
+}
+
+#destinations-page h2,
+#asia-page h2 {
+  color: #fff;
 }
 
 #holidays {
@@ -399,4 +407,85 @@ footer a:hover {
 
 #travel-info-page {
   background-image: url(../images/08-booking-travel-information/travel-information-header-large.jpg);
+}
+
+.gray {
+  background-color: #e5e5e5;
+}
+
+.left {
+  padding-left: 10%;
+}
+
+.left p,
+.card-text a {
+  text-transform: none;
+  font-size: 14px;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+#asia-page {
+  background-image: url(../images/asia/asia-header-image-large.jpg);
+}
+
+.tailand-image {
+  background-position: center center;
+  background-image: url(../images/asia/thailand.jpg);
+}
+
+.cambodia-image {
+  background-position: center center;
+  background-image: url(../images/asia/cambodia.jpg);
+}
+
+.malaysia-image {
+  background-position: center center;
+  background-image: url(../images/asia/malaysia.jpg);
+}
+
+.indonesia-image {
+  background-position: center center;
+  background-image: url(../images/asia/indonesia.jpg);
+}
+
+/* ===== AFRICA ===== */
+
+.africa-image {
+  background-position: center center;
+  background-image: url(../images/africa/south-africa.jpg);
+}
+
+.zambia-image {
+  background-position: center top;
+  background-image: url(../images/africa/Zambia.jpg);
+}
+
+.tanzania-image {
+  background-position: bottom right;
+  background-image: url(../images/africa/tanzania.jpg);
+}
+
+.kenya-image {
+  background-position: center center;
+  background-image: url(../images/africa/kenya.jpg);
+}
+
+/* ==== AUSTRALIA ==== */
+
+.australia-image {
+  background-position: center center;
+  background-image: url(../images/australasia/australia.jpg);
+}
+
+.new-zealand-image {
+  background-position: center center;
+  background-image: url(../images/australasia/new-zealand.jpg);
+}
+
+.pacific-image {
+  background-position: center center;
+  background-image: url(../images/australasia/kenya.jpg);
 }

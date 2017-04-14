@@ -71,6 +71,21 @@
       console.error('Error during service worker registration:', e);
     });
   }
-
-  // Your custom JavaScript goes here
 })();
+
+  $('.owl-carousel').owlCarousel({
+    //loop:true,
+    // margin:10,
+    nav: true,
+    responsive:{
+        0:{
+            items:1
+        },
+        576:{
+            items:3
+        },
+        992:{
+            items:4
+        }
+    }
+})
