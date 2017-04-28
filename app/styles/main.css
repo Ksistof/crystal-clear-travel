@@ -336,13 +336,16 @@ footer a:hover {
   background-color: #4fa8cd;
 }
 
+#text-under-header-image h2 {
+  color: #fff;
+}
+
 #text-under-header-image p {
   text-transform: none;
   margin: 0;
   font-style: normal;
   font-weight: 600;
 }
-
 
 #main-section-about-page p {
   text-transform: none;
@@ -360,7 +363,6 @@ footer a:hover {
 #main-section-about-page a {
   color: #000;
 }
-
 
 /* === DESTINATIONS === */
 
@@ -427,65 +429,177 @@ footer a:hover {
   padding: 0;
 }
 
-#asia-page {
-  background-image: url(../images/asia/asia-header-image-large.jpg);
+.countries-description {
+  padding: 4% 5% 4% 10%;
 }
 
-.tailand-image {
+#asia-page {
+  background-image: url(../images/06-destination-subs/asia/asia-header-image-large.jpg);
+}
+
+.thailand-image {
+  padding: 10% 0;
   background-position: center center;
-  background-image: url(../images/asia/thailand.jpg);
+  background-size: cover;
+  background-image: url(../images/06-destination-subs/asia/thailand.jpeg);
 }
 
 .cambodia-image {
+  padding: 10% 0;
   background-position: center center;
-  background-image: url(../images/asia/cambodia.jpg);
+  background-image: url(../images/06-destination-subs/asia/cambodia.jpg);
 }
 
 .malaysia-image {
+  padding: 10% 0;
   background-position: center center;
-  background-image: url(../images/asia/malaysia.jpg);
+  background-image: url(../images/06-destination-subs/asia/malaysia.jpg);
 }
 
 .indonesia-image {
+  padding: 10% 0;
   background-position: center center;
-  background-image: url(../images/asia/indonesia.jpg);
+  background-image: url(../images/06-destination-subs/asia/indonesia.jpg);
 }
 
 /* ===== AFRICA ===== */
 
-.africa-image {
+#africa-page {
   background-position: center center;
-  background-image: url(../images/africa/south-africa.jpg);
+  background-image: url(../images/06-destination-subs/africa/africa-header-image-large.jpg);
+}
+
+.africa-image {
+  padding: 10% 0;
+  background-position: center center;
+  background-image: url(../images/06-destination-subs/africa/south-africa.jpg);
 }
 
 .zambia-image {
+  padding: 10% 0;
   background-position: center top;
-  background-image: url(../images/africa/Zambia.jpg);
+  background-image: url(../images/06-destination-subs/africa/zambia.jpg);
 }
 
 .tanzania-image {
+  padding: 10% 0;
   background-position: bottom right;
-  background-image: url(../images/africa/tanzania.jpg);
+  background-image: url(../images/06-destination-subs/africa/tanzania.jpg);
 }
 
 .kenya-image {
+  padding: 10% 0;
   background-position: center center;
-  background-image: url(../images/africa/kenya.jpg);
+  background-image: url(../images/06-destination-subs/africa/kenya.jpg);
 }
 
 /* ==== AUSTRALIA ==== */
 
 .australia-image {
+  padding: 10% 0;
   background-position: center center;
-  background-image: url(../images/australasia/australia.jpg);
+  background-image: url(../images/06-destination-subs/australasia/australia.jpg);
 }
 
 .new-zealand-image {
+  padding: 10% 0;
   background-position: center center;
-  background-image: url(../images/australasia/new-zealand.jpg);
+  background-image: url(../images/06-destination-subs/australasia/new-zealand.jpg);
 }
 
 .pacific-image {
+  padding: 10% 0;
   background-position: center center;
-  background-image: url(../images/australasia/kenya.jpg);
+  background-image: url(../images/06-destination-subs/australasia/kenya.jpg);
+}
+
+/* === CARIBBEAN === */
+#caribbean-page {
+  background-position: center center;
+  background-image: url(../images/06-destination-subs/caribbean/caribean-header-images-large.jpg);
+}
+
+.barbados-image {
+
+}
+
+.lucia-image {
+
+}
+
+.antigua-image {
+
+}
+
+.jamaica-image {
+
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../images/06-destination-subs/caribbean/jamaica.jpeg);
+
+}
+
+.mexico-image {
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../images/06-destination-subs/caribbean/mexico.jpeg);
+}
+
+/* === USA === */
+#usa-page {
+  background-position: center center;
+  background-image: url(../images/06-destination-subs/usa/USA-header-image-large.jpg);
+}
+
+.florida-image {
+  padding: 10% 0;
+  background-position: center center;
+  background-image: url(../images/06-destination-subs/usa/florida.jpg);
+}
+
+.york-image {
+  padding: 10% 0;
+  background-position: center center;
+  background-image: url(../images/06-destination-subs/usa/new-york.jpg);
+}
+
+.washingon-image {
+  padding: 10% 0;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../images/06-destination-subs/usa/washington-dc.jpg);
+}
+
+.california-image {
+  padding: 10% 0;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../images/06-destination-subs/usa/california.jpg);
+}
+
+.hawaii-image {
+  padding: 10% 0;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../images/06-destination-subs/usa/hawaii.jpg);
+}
+
+/* === DUBAI === */
+
+#dubai-page {
+  background-image: url(../images/06-destination-subs/dubai/dubai.jpeg);  
+}
+
+.dubai-image {
+  padding: 10% 0;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../images/06-destination-subs/dubai/dubai-safai.jpg);  
+}
+
+.dhabi-image {
+  padding: 10% 0;
+  background-position: center center;
+  background-size: cover;
+  background-image: url(../images/06-destination-subs/dubai/abu-dhabi.jpeg);  
 }
